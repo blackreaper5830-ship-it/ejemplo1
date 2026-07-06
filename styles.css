@@ -1,0 +1,225 @@
+/* VARIABLES DE DISEÑO (Paleta corporativa, moderna y limpia) */
+:root {
+  --bg-primary: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --border-color: #e2e8f0;
+  --radius: 16px;
+  --font-title: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* RESET Y CONFIGURACIÓN BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  padding: 2rem 1rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* CONTENEDOR BENTO GRID (Estructura Creativa No Genérica) */
+.dashboard-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ESTILO BASE DE LAS TARJETAS */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* TIPOGRAFÍAS ESPECÍFICAS POR SECCIÓN */
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+/* DISTRIBUCIÓN DE CADA TARJETA */
+.profile-card {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-card h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.badge {
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 0.35rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.value-card {
+  grid-column: span 1;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--accent-light) 100%);
+}
+
+.education-card {
+  grid-column: span 1;
+}
+
+.education-item h4 {
+  margin-bottom: 0.25rem;
+}
+
+.institution {
+  display: block;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.skills-card {
+  grid-column: span 2;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-tag {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* WIDGET INTERACTIVO (Estilo 21st.dev) */
+.interactive-widget {
+  border: 1px dashed var(--accent);
+  background: var(--accent-light);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.widget-header {
+  font-family: var(--font-title);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.badge-status {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.trait-card {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.trait-icon {
+  background: var(--accent-light);
+  color: var(--accent);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* FOOTER */
+.portfolio-footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVIDAD (Para que se adapte perfectamente a móviles) */
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-card, .value-card, .education-card, .skills-card, .trait-card {
+    grid-column: span 1;
+  }
+  
+  .trait-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
