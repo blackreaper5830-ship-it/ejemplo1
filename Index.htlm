@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Profesional | Innovación y Desarrollo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <main class="dashboard-container">
+    
+    <section class="card profile-card">
+      <div class="badge">Disponible para Incorporación</div>
+      <h1>Ingeniería, IA & Desarrollo</h1>
+      <p class="subtitle">Estudiante de Ingeniería Industrial especializado en la optimización de procesos mediante Inteligencia Artificial y herramientas digitales.</p>
+      <div class="cta-container">
+        <a href="mailto:Yon308@gmail.com" class="btn-primary">
+          <i class="fa-regular fa-envelope"></i> Contactar vía Email
+        </a>
+      </div>
+    </section>
+
+    <section class="card value-card">
+      <h3><i class="fa-solid fa-rocket"></i> Mi Objetivo</h3>
+      <p>Aportar madurez, responsabilidad y una visión fresca a organizaciones en crecimiento. Busco mi primera oportunidad laboral para transformar la teoría académica en soluciones de impacto real.</p>
+    </section>
+
+    <section class="card education-card">
+      <h3><i class="fa-solid fa-graduation-cap"></i> Formación</h3>
+      <div class="education-item">
+        <h4>Grado en Ingeniería Industrial</h4>
+        <span class="institution">Universidad de Castilla-La Mancha (UCLM)</span>
+        <span class="date">Cursados hasta 2º Curso</span>
+      </div>
+    </section>
+
+    <section class="card skills-card">
+      <h3><i class="fa-solid fa-gears"></i> Competencias</h3>
+      <div class="skills-grid">
+        <div class="skill-tag">Herramientas de IA</div>
+        <div class="skill-tag">Ofimática Avanzada</div>
+        <div class="skill-tag">Informática Técnica</div>
+        <div class="skill-tag">Resolución de Problemas</div>
+      </div>
+      
+      <div class="interactive-widget" id="credential-widget">
+        <div class="widget-header">
+          <span><i class="fa-solid fa-globe"></i> Idiomas & Movilidad</span>
+        </div>
+        <div class="widget-body">
+          <div class="badge-status">Inglés: <strong>B2 Certificado</strong></div>
+          <div class="badge-status">Movilidad: <strong>Permiso B (Coche propio)</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card trait-card">
+      <div class="trait-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <h3>Mentalidad Creativa</h3>
+      <p>Capacidad nativa para abordar problemas desde perspectivas no convencionales, optimizando recursos mediante el uso estratégico de software moderno.</p>
+    </section>
+
+  </main>
+
+  <footer class="portfolio-footer">
+    <p>© 2026 · Diseñado con estándares profesionales de UX/UI</p>
+  </footer>
+
+</body>
+</html>
